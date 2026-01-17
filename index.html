@@ -3,19 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Rincón del Tejido</title><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <title>Mi Rincón del Tejido</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       background-color: #fffafa;
       color: #444;
-      .btn i {
-  margin-right: 10px;
-  color: #ff0000;
-}
     }
 
     /* HEADER */
@@ -30,16 +24,6 @@
       font-size: 2.6em;
       color: #8b4a5a;
     }
-header p.bienvenida {
-  font-size: 1.1em;
-  color: #6b4a59;
-  margin-top: 10px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
-  font-style: italic;
-}
 
     header p {
       margin-top: 15px;
@@ -51,12 +35,11 @@ header p.bienvenida {
       display: inline-block;
       margin-top: 25px;
       padding: 14px 28px;
-      background-color: white;
-      color: #c76b82;
+      background-color: #f3a8bd;
+      color: white;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.3em;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
@@ -136,19 +119,58 @@ header p.bienvenida {
       text-decoration: none;
       font-weight: bold;
     }
-  </style>
+  .menu {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu a {
+  color: #c76b82;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+</style>
 </head>
 <body>
 
+<nav class="menu">
+  <a href="#sobre">Detrás de Mi Rincón del Tejido</a>
+  <a href="#cursos">Cursos</a>
+</nav>
+
 <header>
   <h1>Mi Rincón del Tejido</h1>
-  <p>Bienvenida a este espacio para aprender, disfrutar del tejido y sentirte a gusto.<br>
-Aquí encontrarás clases, proyectos en Youtube y una comunidad cálida para compartir tu pasión</p>
-  <a class="btn" href="https://www.youtube.com/@TU_CANAL" target="_blank">
-  <i class="fab fa-youtube"></i> Visita mi canal
-</a>
-
+  <p>Crochet delicado, femenino y hecho con amor</p>
+  <a class="btn" href="#">Ver mis clases</a>
 </header>
+
+<section id="sobre">
+  <h2>Detrás de Mi Rincón del Tejido</h2>
+  <div class="line"></div>
+  <p style="max-width:700px;margin:0 auto;text-align:center;line-height:1.6;">
+    Soy una tejedora apasionada por el crochet, los hilos y los momentos de calma que se crean cuando tejemos con las manos y el corazón. 
+    En este espacio encontrarás proyectos, videos y aprendizajes pensados para disfrutar el tejido sin apuros, conectar contigo y crear piezas hechas con cariño.
+  </p>
+</section>
+
+<section id="cursos">
+  <h2>Cursos</h2>
+  <div class="line"></div>
+  <p style="text-align:center;font-size:1.2em;color:#c76b82;">
+    ✨ PRÓXIMAMENTE ✨
+  </p>
+</section>
 
 <section>
   <h2>Un espacio para tejedoras</h2>
