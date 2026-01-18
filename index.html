@@ -3,56 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Rincón del Tejido</title>
+  <title>Mi Rincón del Tejido</title><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
-      background-color: #faf7f5;
-      color: #333;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fffafa;
+      color: #444;
     }
+
+    /* HEADER */
     header {
-      background-color: #e8cfc4;
-      padding: 40px 20px;
+      background: linear-gradient(135deg, #f8c8d8, #fff1f5);
+      padding: 70px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 2.6em;
+      color: #8b4a5a;
     }
+header p.bienvenida {
+  font-size: 1.1em;
+  color: #6b4a59;
+  margin-top: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  font-style: italic;
+}
+
     header p {
-      font-size: 1.1em;
-      margin-top: 10px;
+      margin-top: 15px;
+      font-size: 1.2em;
+      color: #7a5a63;
     }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 18px 36px;
+      background-color: #f3a8bd;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* SECTIONS */
     section {
-      max-width: 900px;
-      margin: 40px auto;
+      max-width: 1000px;
+      margin: 70px auto;
       padding: 0 20px;
     }
+
     h2 {
-      color: #8a5a44;
-      margin-bottom: 15px;
+      text-align: center;
+      color: #c76b82;
+      font-size: 1.8em;
+      margin-bottom: 10px;
     }
+
+    .line {
+      width: 90px;
+      height: 4px;
+      background-color: #f3a8bd;
+      margin: 15px auto 40px;
+      border-radius: 10px;
+    }
+
+    /* CARDS */
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
     }
+
     .card {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-    footer {
-      background-color: #e8cfc4;
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px 25px;
       text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .card span {
+      font-size: 2em;
+    }
+
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 20px;
       padding: 20px;
-      margin-top: 60px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.07);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #f8c8d8;
+      text-align: center;
+      padding: 30px 20px;
+      color: #7a3f4d;
       font-size: 0.9em;
     }
+
     a {
-      color: #8a5a44;
+      color: #c76b82;
       text-decoration: none;
       font-weight: bold;
     }
@@ -60,49 +135,55 @@
 </head>
 <body>
 
-  <header>
-    <h1>Mi Rincón del Tejido</h1>
-    <p>Clases, proyectos y amor por el crochet</p>
-  </header>
+<header>
+  <h1>Mi Rincón del Tejido</h1>
+  <p>Bienvenida a este espacio para aprender, disfrutar del tejido y sentirte a gusto.<br>
+Aquí encontrarás clases, proyectos en Youtube y una comunidad cálida para compartir tu pasión</p>
+  <a class="btn" href="#">Visita Mi Canal</a>
+</header>
 
-  <section>
-    <h2>Sobre mí</h2>
-    <p>
-      Soy Pamela, profesora de crochet. Enseño paso a paso, con calma y cariño, 
-      para que disfrutes el tejido y crees piezas útiles y hermosas.
-    </p>
-  </section>
+<section>
+  <h2>Un espacio para tejedoras</h2>
+  <div class="line"></div>
+  <div class="cards">
+    <div class="card"><span>🧶</span><br><br>Proyectos suaves y útiles para el día a día</div>
+    <div class="card"><span>🌸</span><br><br>Clases pensadas para mujeres, sin apuro</div>
+    <div class="card"><span>💗</span><br><br>Un rincón de calma, creatividad y compañía</div>
+  </div>
+</section>
 
-  <section>
-    <h2>Qué encontrarás aquí</h2>
-    <div class="cards">
-      <div class="card">📺 Tutoriales y clases en YouTube</div>
-      <div class="card">🧶 Proyectos simples y prácticos</div>
-      <div class="card">📘 Patrones y material digital</div>
-      <div class="card">💬 Comunidad y acompañamiento</div>
+<section>
+  <h2>Patrones y talleres</h2>
+  <div class="line"></div>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200.png?text=Crochet" />
+      <strong>Patrón Digital</strong><br>Proyecto delicado
     </div>
-  </section>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200.png?text=Tejido" />
+      <strong>Taller Online</strong><br>Desde cero
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200.png?text=Handmade" />
+      <strong>Proyecto Especial</strong><br>Paso a paso
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>Clases y talleres</h2>
-    <p>
-      Realizo clases online y talleres especiales para principiantes y niveles intermedios.
-      Pronto más información.
-    </p>
-  </section>
+<section>
+  <h2>Contacto</h2>
+  <div class="line"></div>
+  <p style="text-align:center;">
+    📩 Correo: <strong>tucorreo@email.com</strong><br><br>
+    📱 WhatsApp: <strong>+56 9 XXXX XXXX</strong><br><br>
+    ▶️ YouTube: <a href="#">Mi Rincón del Tejido</a>
+  </p>
+</section>
 
-  <section>
-    <h2>Contacto</h2>
-    <p>
-      📩 Escríbeme a: <strong>tucorreo@email.com</strong><br />
-      📱 WhatsApp: <strong>+56 9 XXXX XXXX</strong><br />
-      ▶️ YouTube: <a href="#">Mi Rincón del Tejido</a>
-    </p>
-  </section>
-
-  <footer>
-    © 2026 · Mi Rincón del Tejido · Hecho con amor y crochet
-  </footer>
+<footer>
+  © 2026 · Mi Rincón del Tejido · Crochet con ternura
+</footer>
 
 </body>
 </html>
