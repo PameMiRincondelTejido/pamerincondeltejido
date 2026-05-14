@@ -1,93 +1,231 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Rincón del Tejido</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Poppins',sans-serif;
+background:#faf9f7;
+color:#333;
+}
+
+nav{
+padding:25px;
+display:flex;
+justify-content:center;
+gap:40px;
+font-size:15px;
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-family:'Playfair Display';
+font-size:70px;
+color:#F48A78;
+}
+
+.hero h2{
+font-size:40px;
+color:#8FD6D3;
+font-weight:300;
+margin-top:10px;
+}
+
+.hero p{
+margin-top:25px;
+font-size:28px;
+line-height:1.6;
+}
+
+.hero span{
+color:#F48A78;
+font-weight:600;
+}
+
+.botones{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:60px;
+flex-wrap:wrap;
+}
+
+.circulo{
+width:170px;
+height:170px;
+border-radius:50%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:26px;
+font-weight:bold;
+text-align:center;
+padding:15px;
+box-shadow:0 4px 14px rgba(0,0,0,.1);
+}
+
+.ovillo{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.rosa{background:#F48A78}
+.turquesa{background:#8FD6D3}
+
+.club{
+display:block;
+margin:50px auto;
+background:#8FD6D3;
+color:white;
+border:none;
+padding:18px 45px;
+border-radius:10px;
+font-size:22px;
+cursor:pointer;
+}
+
+.seccion{
+padding:70px 20px;
+text-align:center;
+}
+
+.seccion h2{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.linea{
+width:70px;
+height:4px;
+background:#F48A78;
+margin:auto;
+border-radius:20px;
+margin-bottom:40px;
+}
+
+.galeria{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
 max-width:1100px;
 margin:auto;
 }
+
 .card{
 background:white;
 padding:15px;
 border-radius:20px;
 box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
+
 .card img{
 width:100%;
-border-radius:15px;
-height:230px;
+height:220px;
 object-fit:cover;
+border-radius:15px;
 }
-.card h3{margin-top:15px}
+
+.card h3{
+margin-top:15px;
+}
+
 .card p{
-font-size:14px;
 margin-top:10px;
+font-size:14px;
 color:#777;
 }
+
 footer{
-margin-top:80px;
+margin-top:60px;
+padding:35px;
 background:#F48A78;
-padding:30px;
 text-align:center;
 color:white;
 }
+
 </style>
 </head>
 <body>
 
 <nav>
-<a href='#'>Inicio</a>
-<a href='#'>Proyectos</a>
-<a href='#'>Academia</a>
-<a href='#'>Comunidad</a>
-<a href='#'>Contacto</a>
+<a href="#">Inicio</a>
+<a href="#">Proyectos</a>
+<a href="#">Academia</a>
+<a href="#">Comunidad</a>
+<a href="#">Contacto</a>
 </nav>
 
-<section class='hero'>
+<section class="hero">
 <h1>Club de Crochet</h1>
 <h2>by Mi Rincón del Tejido</h2>
-<p>Una comunidad para aprender,<br>compartir y <span class='tejer'>tejer juntas</span></p>
+<p>Una comunidad para aprender,<br>compartir y <span>tejer juntas</span></p>
 
-<div class='botones'>
-<div class='circulo rosa'>🧶<br>Patrones<br>Básicos</div>
-<div class='circulo turquesa'>🧶<br>Puntos y<br>Tramas</div>
+<div class="botones">
+<div class="circulo rosa">
+<div class="ovillo">🧶</div>
+Patrones Básicos
 </div>
 
-<button class='club'>Entrar al Club</button>
+<div class="circulo turquesa">
+<div class="ovillo">🧶</div>
+Puntos y Tramas
+</div>
+</div>
+
+<button class="club">Entrar al Club</button>
 </section>
 
-<section class='proyectos'>
+<section class="seccion">
 <h2>Tejemos Juntas</h2>
-<div class='linea'></div>
+<div class="linea"></div>
 
-<div class='galeria'>
-<div class='card'>
-<img src='https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=600'>
+<div class="galeria">
+
+<div class="card">
+<img src="https://picsum.photos/300/300?1">
 <h3>Mandala Crochet</h3>
 <p>Disponible dentro del Club</p>
 </div>
 
-<div class='card'>
-<img src='https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600'>
+<div class="card">
+<img src="https://picsum.photos/300/300?2">
 <h3>Agarraderas</h3>
 <p>Disponible dentro del Club</p>
 </div>
 
-<div class='card'>
-<img src='https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600'>
+<div class="card">
+<img src="https://picsum.photos/300/300?3">
 <h3>Sobres Crochet</h3>
 <p>Disponible dentro del Club</p>
 </div>
 
-<div class='card'>
-<img src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?w=600'>
+<div class="card">
+<img src="https://picsum.photos/300/300?4">
 <h3>Portalápices</h3>
 <p>Disponible dentro del Club</p>
 </div>
+
 </div>
 </section>
 
 <footer>
-Mi Rincón del Tejido • Comunidad de Tejedoras
+Mi Rincón del Tejido · Comunidad de Tejedoras
 </footer>
 
 </body>
