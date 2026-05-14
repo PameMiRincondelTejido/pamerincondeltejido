@@ -1,102 +1,94 @@
-Reemplace TODO el contenido de tu archivo index.html por este código completo:
-
-```html
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Rincón del Tejido</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f7f5f3;
-color:#333;
-}
-
-section{
-padding:70px 20px;
-text-align:center;
-}
-
-h2{
-font-size:55px;
-margin-bottom:10px;
-color:#444;
-}
-
-.linea{
-width:70px;
-height:5px;
-background:#F48A78;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+max-width:1100px;
 margin:auto;
+}
+.card{
+background:white;
+padding:15px;
 border-radius:20px;
-margin-bottom:50px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
-
-.botones{
-display:flex;
-justify-content:center;
-gap:60px;
-flex-wrap:wrap;
+.card img{
+width:100%;
+border-radius:15px;
+height:230px;
+object-fit:cover;
 }
-
-.circulo{
-width:170px;
-height:170px;
-border-radius:50%;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:30px;
-font-weight:bold;
-padding-top:0;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
+.card h3{margin-top:15px}
+.card p{
+font-size:14px;
+margin-top:10px;
+color:#777;
 }
-
-.circulo img{
-width:35px;
-margin-bottom:12px;
-opacity:.95;
-}
-
-.rosa{
+footer{
+margin-top:80px;
 background:#F48A78;
+padding:30px;
+text-align:center;
+color:white;
 }
-
-.turquesa{
-background:#8FD6D3;
-}
-
 </style>
 </head>
 <body>
 
-<section>
+<nav>
+<a href='#'>Inicio</a>
+<a href='#'>Proyectos</a>
+<a href='#'>Academia</a>
+<a href='#'>Comunidad</a>
+<a href='#'>Contacto</a>
+</nav>
 
-<h2>Tejemos Juntas</h2>
-<div class="linea"></div>
+<section class='hero'>
+<h1>Club de Crochet</h1>
+<h2>by Mi Rincón del Tejido</h2>
+<p>Una comunidad para aprender,<br>compartir y <span class='tejer'>tejer juntas</span></p>
 
-<div class="botones">
-
-<div class="circulo rosa">
-<img src="https://cdn-icons-png.flaticon.com/512/862/862819.png">
-<div>Patrones<br>Básicos</div>
+<div class='botones'>
+<div class='circulo rosa'>🧶<br>Patrones<br>Básicos</div>
+<div class='circulo turquesa'>🧶<br>Puntos y<br>Tramas</div>
 </div>
 
-<div class="circulo turquesa">
-<img src="https://cdn-icons-png.flaticon.com/512/862/862819.png">
-<div>Puntos y<br>Tramas</div>
-</div>
-
-</div>
-
+<button class='club'>Entrar al Club</button>
 </section>
+
+<section class='proyectos'>
+<h2>Tejemos Juntas</h2>
+<div class='linea'></div>
+
+<div class='galeria'>
+<div class='card'>
+<img src='https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=600'>
+<h3>Mandala Crochet</h3>
+<p>Disponible dentro del Club</p>
+</div>
+
+<div class='card'>
+<img src='https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600'>
+<h3>Agarraderas</h3>
+<p>Disponible dentro del Club</p>
+</div>
+
+<div class='card'>
+<img src='https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600'>
+<h3>Sobres Crochet</h3>
+<p>Disponible dentro del Club</p>
+</div>
+
+<div class='card'>
+<img src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?w=600'>
+<h3>Portalápices</h3>
+<p>Disponible dentro del Club</p>
+</div>
+</div>
+</section>
+
+<footer>
+Mi Rincón del Tejido • Comunidad de Tejedoras
+</footer>
 
 </body>
 </html>
-```
