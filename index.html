@@ -1,4 +1,220 @@
+```html
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Club de Crochet | Mi Rincón del Tejido</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#f3efef;
+color:#333;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:white;
+padding:20px;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:35px;
+}
+
+nav a{
+text-decoration:none;
+color:#555;
+font-size:20px;
+}
+
+.boton{
+background:#ef8c79;
+padding:14px 25px;
+border-radius:30px;
+color:white;
+font-weight:600;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:80px;
+gap:40px;
+min-height:80vh;
+}
+
+.hero h1{
+font-family:Playfair Display;
+font-size:80px;
+color:#ef8c79;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero h2{
+font-size:25px;
+font-weight:400;
+margin-bottom:30px;
+}
+
+.hero p{
+font-size:30px;
+max-width:500px;
+}
+
+.foto-marco{
+position:relative;
+width:500px;
+height:500px;
+margin:auto;
+}
+
+.hilo{
+position:absolute;
+width:100%;
+height:100%;
+border:2px solid #6cdde2;
+border-radius:50%;
+transform:rotate(-10deg);
+}
+
+.hilo::before{
+content:"";
+position:absolute;
+inset:15px;
+border:2px solid #6cdde2;
+border-radius:50%;
+transform:rotate(15deg);
+}
+
+.ganchillo{
+position:absolute;
+right:-20px;
+top:50px;
+font-size:70px;
+transform:rotate(35deg);
+}
+
+.foto{
+position:absolute;
+inset:50px;
+border-radius:50%;
+overflow:hidden;
+}
+
+.foto img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.titulo{
+text-align:center;
+font-size:60px;
+margin:40px;
+}
+
+.proyectos{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding:50px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:25px;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+margin-bottom:15px;
+}
+
+footer{
+background:#ece2df;
+padding:50px;
+margin-top:50px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#25D366;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+text-decoration:none;
+}
+
+@media(max-width:900px){
+.hero{
+grid-template-columns:1fr;
+padding:30px;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.foto-marco{
+width:350px;
+height:350px;
+}
+
+.proyectos{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Proyectos</a>
+<a href="#">Club</a>
+<a href="#">YouTube</a>
+<a href="#">Contacto</a>
+<a class="boton" href="#">Únete al Club</a>
 </nav>
 </header>
 
@@ -7,21 +223,15 @@
 <div>
 <h1>Club de Crochet</h1>
 <h2>by Mi Rincón del Tejido</h2>
-<p>
-Una comunidad para aprender,<br>
-compartir y tejer juntas
-</p>
+<p>Una comunidad para aprender, compartir y tejer juntas</p>
 </div>
 
-<div class="imagen-lateral">
-<div class="circulo-crochet">
+<div class="foto-marco">
+<div class="hilo"></div>
+<div class="ganchillo">🧶</div>
 
-<img class="hilo" src="hilo-turquesa.png">
-
-<img class="foto-circular" src="manos-tejiendo.jpg">
-
-<div class="ganchillo">🪝</div>
-
+<div class="foto">
+<img src="manos-tejiendo.jpg">
 </div>
 </div>
 
@@ -33,19 +243,19 @@ compartir y tejer juntas
 
 <div class="card">
 <img src="manos-tejiendo.jpg">
-<h3>Mandalas Crochet</h3>
+<h3>Mandala Crochet</h3>
 <p>Disponible dentro del Club</p>
 </div>
 
 <div class="card">
 <img src="manos-tejiendo.jpg">
-<h3>Blusas Crochet</h3>
+<h3>Agarraderas</h3>
 <p>Disponible dentro del Club</p>
 </div>
 
 <div class="card">
 <img src="manos-tejiendo.jpg">
-<h3>Agrarraderas</h3>
+<h3>Sobres Crochet</h3>
 <p>Disponible dentro del Club</p>
 </div>
 
@@ -53,26 +263,23 @@ compartir y tejer juntas
 
 <footer>
 <div class="footer-grid">
-
 <div>
-<h2>Mi Rincón del Tejido</h2>
-<p>Un espacio cálido para aprender y compartir crochet.</p>
+<h3>Mi Rincón del Tejido</h3>
+<p>Tejemos juntas paso a paso.</p>
 </div>
 
 <div>
-<h2>Explora</h2>
+<h3>Explora</h3>
 <p>Club</p>
 <p>YouTube</p>
 <p>Proyectos</p>
 </div>
 
 <div>
-<h2>Contacto</h2>
-<p>Instagram</p>
-<p>YouTube</p>
+<h3>Contáctanos</h3>
 <p>WhatsApp</p>
+<p>Instagram</p>
 </div>
-
 </div>
 </footer>
 
@@ -80,4 +287,6 @@ compartir y tejer juntas
 
 </body>
 </html>
+```
+
 
