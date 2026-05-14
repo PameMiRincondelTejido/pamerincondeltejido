@@ -1,14 +1,19 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mi Rincón del Tejido</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -21,293 +26,346 @@ background:#faf9f7;
 color:#333;
 }
 
-/* MENU */
+/* menú */
+
 nav{
 position:fixed;
 top:0;
 width:100%;
 background:white;
-padding:22px;
+padding:20px;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:40px;
+gap:35px;
 box-shadow:0 2px 15px rgba(0,0,0,.05);
-z-index:1000;
+z-index:999;
 }
 
 nav a{
 text-decoration:none;
 color:#444;
-font-size:16px;
 }
 
-.boton-club{
+.club{
 background:#F48A78;
-color:white;
 padding:12px 25px;
 border-radius:30px;
-text-decoration:none;
+color:white;
 }
 
-/* HERO */
+/* principal */
+
 .hero{
+
 padding-top:150px;
 padding-left:8%;
 padding-right:8%;
+
 display:flex;
 align-items:center;
 justify-content:center;
-gap:60px;
+gap:70px;
 flex-wrap:wrap;
+
 }
 
 .texto{
-max-width:500px;
+
+max-width:450px;
+
 }
 
 .texto h1{
-font-family:'Playfair Display',serif;
+
 font-size:70px;
+font-family:'Playfair Display';
+
 color:#F48A78;
-margin-bottom:10px;
+
 }
 
 .texto h2{
+
 font-weight:300;
-font-size:35px;
-margin-bottom:25px;
-color:#666;
+margin:20px 0;
+
 }
 
 .texto p{
-font-size:24px;
-line-height:1.6;
+
+font-size:25px;
+line-height:1.5;
+
 }
 
 .foto img{
+
 width:700px;
 max-width:100%;
 border-radius:30px;
-box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
 }
 
-/* CIRCULOS */
-.circulos{
-display:flex;
-justify-content:center;
-gap:50px;
-margin-top:80px;
-flex-wrap:wrap;
-}
+/* proyectos */
 
-.circulo{
-width:180px;
-height:180px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-font-weight:600;
-color:white;
-padding:20px;
-font-size:24px;
-}
-
-.coral{
-background:#F48A78;
-}
-
-.suave{
-background:#d7b1a7;
-}
-
-.entrar{
-text-align:center;
-margin-top:40px;
-}
-
-.entrar a{
-background:#F48A78;
-padding:16px 40px;
-border-radius:30px;
-text-decoration:none;
-color:white;
-}
-
-/* PROYECTOS */
 .titulo{
+
 text-align:center;
 margin-top:100px;
-font-size:50px;
+font-size:60px;
+
 }
 
 .proyectos{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
 gap:30px;
-padding:50px 8%;
+
+padding:50px;
+
 }
 
 .card{
+
 background:white;
 padding:15px;
+
 border-radius:25px;
+
 box-shadow:0 5px 20px rgba(0,0,0,.06);
+
 }
 
 .card img{
+
 width:100%;
-border-radius:20px;
-height:230px;
+height:250px;
 object-fit:cover;
+
+border-radius:20px;
+
 }
 
 .card h3{
-margin-top:15px;
+
 text-align:center;
+margin-top:15px;
+
 }
 
 .card p{
+
 text-align:center;
 margin-top:10px;
 color:#777;
+
 }
 
-/* FOOTER */
+/* footer */
+
 footer{
-margin-top:100px;
-background:#f5ece8;
-padding:60px 8%;
+
+background:#f3ece8;
+
+padding:70px;
+
+margin-top:80px;
+
 }
 
-.footer-grid{
+.footer{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
+
+gap:50px;
+
 }
 
 footer h3{
+
 margin-bottom:20px;
+
 }
 
 footer p{
-line-height:1.8;
+
+line-height:2;
+
 }
 
+/* whatsapp */
+
 .whatsapp{
+
 position:fixed;
+
 right:20px;
 bottom:20px;
+
+width:70px;
+height:70px;
+
 background:#25D366;
-width:65px;
-height:65px;
+
 border-radius:50%;
+
 display:flex;
-align-items:center;
+
 justify-content:center;
-font-size:30px;
-text-decoration:none;
+align-items:center;
+
 color:white;
+
+font-size:35px;
+
+text-decoration:none;
+
 }
 
 </style>
+
 </head>
+
 <body>
 
 <nav>
+
 <a href="#">Inicio</a>
 <a href="#">Proyectos</a>
 <a href="#">Club</a>
 <a href="#">YouTube</a>
 <a href="#">Contacto</a>
-<a class="boton-club" href="#">Entrar al Club</a>
+
+<a class="club" href="#">Entrar al Club</a>
+
 </nav>
 
 <section class="hero">
 
 <div class="texto">
+
 <h1>Club de Crochet</h1>
+
 <h2>by Mi Rincón del Tejido</h2>
+
 <p>
+
 Una comunidad para aprender,
 compartir y tejer juntas
+
 </p>
+
 </div>
 
 <div class="foto">
+
 <img src="assets/img/foto-principal.jpg">
+
 </div>
 
 </section>
 
-<div class="circulos">
-<div class="circulo coral">Patrones Básicos</div>
-<div class="circulo suave">Puntos y Tramas</div>
-</div>
+<h2 class="titulo">
 
-<div class="entrar">
-<a href="#">Entrar al Club</a>
-</div>
+Tejemos Juntas
 
-<h2 class="titulo">Tejemos Juntas</h2>
+</h2>
 
 <section class="proyectos">
 
 <div class="card">
+
 <img src="assets/img/foto-principal.jpg">
+
 <h3>Mandala Crochet</h3>
+
 <p>Disponible dentro del Club</p>
+
 </div>
 
+
 <div class="card">
+
 <img src="assets/img/foto-principal.jpg">
+
 <h3>Agarraderas</h3>
+
 <p>Disponible dentro del Club</p>
+
 </div>
 
+
 <div class="card">
+
 <img src="assets/img/foto-principal.jpg">
+
 <h3>Sobres Crochet</h3>
+
 <p>Disponible dentro del Club</p>
+
 </div>
 
 </section>
 
+
 <footer>
 
-<div class="footer-grid">
+<div class="footer">
 
 <div>
+
 <h3>Mi Rincón del Tejido</h3>
+
 <p>
+
 Un espacio cálido para aprender,
 crear y disfrutar cada puntada.
+
 </p>
+
 </div>
 
+
 <div>
+
 <h3>Explora</h3>
+
 <p>Club</p>
 <p>Proyectos</p>
 <p>YouTube</p>
 <p>Contacto</p>
+
 </div>
 
+
 <div>
+
 <h3>Mantengámonos conectadas</h3>
+
 <p>YouTube</p>
 <p>Instagram</p>
 <p>WhatsApp</p>
+
 </div>
 
 </div>
 
 </footer>
 
-<a class="whatsapp" href="#">🟢</a>
+<a class="whatsapp" href="#">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
 
 </body>
+
 </html>
-```
