@@ -6,14 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mi Rincón del Tejido</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{
-font-family:'Poppins',sans-serif;
-background:#f5f2f2;
-color:#333;
-}
+body{font-family:'Poppins',sans-serif;background:#f5f2f2;color:#333;}
 
 header{
 position:sticky;
@@ -52,7 +47,6 @@ grid-template-columns:1fr 1fr;
 align-items:center;
 gap:40px;
 padding:80px 10%;
-position:relative;
 }
 
 .hero h1{
@@ -81,23 +75,33 @@ text-align:right;
 .imagen-lateral img{
 width:85%;
 border-radius:35px;
-opacity:.45;
-filter:brightness(1.05);
+display:block;
+
+-webkit-mask-image:linear-gradient(
+to right,
+rgba(0,0,0,1) 65%,
+rgba(0,0,0,0)
+);
+
+mask-image:linear-gradient(
+to right,
+rgba(0,0,0,1) 65%,
+rgba(0,0,0,0)
+);
 }
 
 .ovillo{
 position:absolute;
 font-size:70px;
-top:8%;
+top:10%;
 left:10%;
-opacity:.2;
+opacity:.15;
 }
 
 .titulo{
 text-align:center;
 font-size:60px;
-margin-top:30px;
-margin-bottom:50px;
+margin:60px 0;
 }
 
 .proyectos{
@@ -122,14 +126,8 @@ object-fit:cover;
 border-radius:20px;
 }
 
-.card h3{
-margin-top:15px;
-}
-
-.card p{
-margin-top:10px;
-color:#777;
-}
+.card h3{margin-top:15px;}
+.card p{margin-top:10px;color:#777;}
 
 footer{
 background:#efe4e2;
@@ -139,22 +137,17 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:40px;
 }
 
-footer h3{
-margin-bottom:15px;
-}
-
-footer p{
-line-height:1.8;
-}
+footer h3{margin-bottom:15px;}
+footer p{line-height:1.8;}
 
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
+background:#25D366;
 width:60px;
 height:60px;
 border-radius:50%;
-background:#25D366;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -168,18 +161,11 @@ color:white;
 grid-template-columns:1fr;
 text-align:center;
 }
-
-.hero h1{
-font-size:55px;
-}
-
-.imagen-lateral{
-text-align:center;
-}
+.hero h1{font-size:55px;}
+.imagen-lateral{text-align:center;}
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -197,7 +183,7 @@ text-align:center;
 <div>
 <h1>Club de Crochet</h1>
 <h2>by Mi Rincón del Tejido</h2>
-<p>Una comunidad para aprender,<br> compartir y tejer juntas</p>
+<p>Una comunidad para aprender,<br>compartir y tejer juntas</p>
 </div>
 
 <div class="imagen-lateral">
@@ -209,7 +195,6 @@ text-align:center;
 <h2 class="titulo">Tejemos Juntas</h2>
 
 <section class="proyectos">
-
 <div class="card">
 <img src="manos-tejiendo.jpg">
 <h3>Mandala Crochet</h3>
@@ -227,13 +212,12 @@ text-align:center;
 <h3>Sobres Crochet</h3>
 <p>Disponible dentro del Club</p>
 </div>
-
 </section>
 
 <footer>
 <div>
 <h3>Mi Rincón del Tejido</h3>
-<p>Un espacio cálido para compartir proyectos, clases y amor por el crochet.</p>
+<p>Un espacio cálido para compartir proyectos y crochet.</p>
 </div>
 
 <div>
