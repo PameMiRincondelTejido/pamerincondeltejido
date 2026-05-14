@@ -1,344 +1,102 @@
+Reemplace TODO el contenido de tu archivo index.html por este código completo:
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Mi Rincón del Tejido</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
-
 body{
 margin:0;
-font-family:'Segoe UI',sans-serif;
-background:#FAF8F5;
-color:#3F3F3F;
-line-height:1.7;
+font-family:Arial,sans-serif;
+background:#f7f5f3;
+color:#333;
 }
-
-/* MENÚ */
-
-nav{
-display:flex;
-justify-content:center;
-gap:40px;
-padding:25px;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,.04);
-position:sticky;
-top:0;
-}
-
-nav a{
-text-decoration:none;
-color:#444;
-font-weight:500;
-}
-
-/* CABECERA */
-
-header{
-
-padding:90px 20px;
-text-align:center;
-
-}
-
-header h1{
-
-font-size:4em;
-margin:0;
-font-weight:600;
-
-}
-
-.sub{
-
-font-size:1.7em;
-color:#8FD6D3;
-margin-top:-10px;
-
-}
-
-header p{
-
-max-width:700px;
-margin:auto;
-font-size:1.2em;
-color:#666;
-
-}
-
-.club{
-
-display:inline-block;
-margin-top:35px;
-padding:16px 45px;
-background:#8FD6D3;
-color:white;
-border-radius:10px;
-text-decoration:none;
-font-size:1.2em;
-font-weight:bold;
-
-}
-
-/* SECCIONES */
 
 section{
-
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
-
+padding:70px 20px;
+text-align:center;
 }
 
 h2{
-
-text-align:center;
-font-size:2em;
-
+font-size:55px;
+margin-bottom:10px;
+color:#444;
 }
 
-.line{
-
+.linea{
 width:70px;
-height:4px;
+height:5px;
 background:#F48A78;
 margin:auto;
 border-radius:20px;
-margin-bottom:40px;
-
+margin-bottom:50px;
 }
 
-/* CÍRCULOS */
-
 .botones{
-
 display:flex;
 justify-content:center;
-gap:50px;
-margin-top:50px;
+gap:60px;
 flex-wrap:wrap;
-
 }
 
 .circulo{
-
-width:220px;
-height:220px;
+width:170px;
+height:170px;
 border-radius:50%;
 display:flex;
+flex-direction:column;
 align-items:center;
 justify-content:center;
-flex-direction:column;
 color:white;
-font-size:1.5em;
+font-size:30px;
 font-weight:bold;
+padding-top:0;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
 
+.circulo img{
+width:35px;
+margin-bottom:12px;
+opacity:.95;
 }
 
 .rosa{
-
 background:#F48A78;
-
 }
 
 .turquesa{
-
 background:#8FD6D3;
-
-}
-
-/* PROYECTOS */
-
-.proyectos{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-
-}
-
-.proyecto{
-
-background:white;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.06);
-
-}
-
-.proyecto img{
-
-width:100%;
-display:block;
-
-}
-
-.proyecto p{
-
-padding:15px;
-text-align:center;
-
-}
-
-/* FOOTER */
-
-footer{
-
-margin-top:100px;
-background:#F48A78;
-padding:30px;
-text-align:center;
-color:white;
-
-}
-
-.redes{
-
-font-size:30px;
-display:flex;
-justify-content:center;
-gap:30px;
-margin-bottom:20px;
-
 }
 
 </style>
 </head>
-
 <body>
-
-<nav>
-
-<a href="">Inicio</a>
-<a href="">Proyectos</a>
-<a href="">Academia</a>
-<a href="">Comunidad</a>
-<a href="">Contacto</a>
-
-</nav>
-
-<header>
-
-<h1>Club de Crochet</h1>
-
-<div class="sub">
-by Mi Rincón del Tejido
-</div>
-
-<p>
-
-Una comunidad para aprender,
-compartir y <span style="color:#F48A78;">tejer juntas</span>
-
-</p>
-
-<a class="club" href="">
-Entrar al Club
-</a>
-
-</header>
-
 
 <section>
 
 <h2>Tejemos Juntas</h2>
-
-<div class="line"></div>
+<div class="linea"></div>
 
 <div class="botones">
 
 <div class="circulo rosa">
-
-🧶
-<br>
-
-Patrones
-Básicos
-
+<img src="https://cdn-icons-png.flaticon.com/512/862/862819.png">
+<div>Patrones<br>Básicos</div>
 </div>
 
 <div class="circulo turquesa">
-
-✨
-<br>
-
-Tramas
-o Puntos
-
+<img src="https://cdn-icons-png.flaticon.com/512/862/862819.png">
+<div>Puntos y<br>Tramas</div>
 </div>
 
 </div>
 
 </section>
-
-
-<section>
-
-<h2>Proyectos del Club</h2>
-
-<div class="line"></div>
-
-<div class="proyectos">
-
-<div class="proyecto">
-
-<img src="https://via.placeholder.com/300x250">
-
-<p>Mandala</p>
-
-</div>
-
-<div class="proyecto">
-
-<img src="https://via.placeholder.com/300x250">
-
-<p>Agarraderas</p>
-
-</div>
-
-<div class="proyecto">
-
-<img src="https://via.placeholder.com/300x250">
-
-<p>Sobres Crochet</p>
-
-</div>
-
-<div class="proyecto">
-
-<img src="https://via.placeholder.com/300x250">
-
-<p>Portalápices</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<div class="redes">
-
-<i class="fab fa-youtube"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-tiktok"></i>
-
-<i class="fab fa-whatsapp"></i>
-
-</div>
-
-Mi Rincón del Tejido · Comunidad de Tejedoras
-
-</footer>
 
 </body>
 </html>
+```
