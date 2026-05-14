@@ -5,15 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Club de Crochet | Mi Rincón del Tejido</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
 font-family:Poppins,sans-serif;
@@ -25,7 +20,7 @@ header{
 position:sticky;
 top:0;
 z-index:1000;
-background:white;
+background:#fff;
 padding:20px;
 box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
@@ -33,8 +28,8 @@ box-shadow:0 2px 10px rgba(0,0,0,.05);
 nav{
 display:flex;
 justify-content:center;
-align-items:center;
 gap:35px;
+align-items:center;
 }
 
 nav a{
@@ -71,18 +66,18 @@ margin-bottom:20px;
 .hero h2{
 font-size:25px;
 font-weight:400;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
 .hero p{
-font-size:30px;
+font-size:28px;
 max-width:500px;
 }
 
 .foto-marco{
 position:relative;
-width:500px;
-height:500px;
+width:520px;
+height:520px;
 margin:auto;
 }
 
@@ -106,15 +101,16 @@ transform:rotate(15deg);
 
 .ganchillo{
 position:absolute;
-right:-20px;
-top:50px;
-font-size:70px;
+right:-10px;
+top:45px;
+font-size:75px;
 transform:rotate(35deg);
+opacity:.8;
 }
 
 .foto{
 position:absolute;
-inset:50px;
+inset:45px;
 border-radius:50%;
 overflow:hidden;
 }
@@ -123,12 +119,13 @@ overflow:hidden;
 width:100%;
 height:100%;
 object-fit:cover;
+object-position:20% center;
 }
 
 .titulo{
 text-align:center;
 font-size:60px;
-margin:40px;
+margin:60px;
 }
 
 .proyectos{
@@ -151,7 +148,7 @@ width:100%;
 height:220px;
 object-fit:cover;
 border-radius:20px;
-margin-bottom:15px;
+object-position:20% center;
 }
 
 footer{
@@ -188,21 +185,10 @@ grid-template-columns:1fr;
 padding:30px;
 text-align:center;
 }
-
-.hero h1{
-font-size:55px;
+.hero h1{font-size:55px}
+.foto-marco{width:350px;height:350px}
+.proyectos{grid-template-columns:1fr}
 }
-
-.foto-marco{
-width:350px;
-height:350px;
-}
-
-.proyectos{
-grid-template-columns:1fr;
-}
-}
-
 </style>
 </head>
 <body>
@@ -219,7 +205,6 @@ grid-template-columns:1fr;
 </header>
 
 <section class="hero">
-
 <div>
 <h1>Club de Crochet</h1>
 <h2>by Mi Rincón del Tejido</h2>
@@ -228,19 +213,16 @@ grid-template-columns:1fr;
 
 <div class="foto-marco">
 <div class="hilo"></div>
-<div class="ganchillo">🧶</div>
-
+<div class="ganchillo">🪝</div>
 <div class="foto">
 <img src="manos-tejiendo.jpg">
 </div>
 </div>
-
 </section>
 
 <h2 class="titulo">Tejemos Juntas</h2>
 
 <section class="proyectos">
-
 <div class="card">
 <img src="manos-tejiendo.jpg">
 <h3>Mandala Crochet</h3>
@@ -258,7 +240,6 @@ grid-template-columns:1fr;
 <h3>Sobres Crochet</h3>
 <p>Disponible dentro del Club</p>
 </div>
-
 </section>
 
 <footer>
@@ -267,14 +248,12 @@ grid-template-columns:1fr;
 <h3>Mi Rincón del Tejido</h3>
 <p>Tejemos juntas paso a paso.</p>
 </div>
-
 <div>
 <h3>Explora</h3>
 <p>Club</p>
 <p>YouTube</p>
 <p>Proyectos</p>
 </div>
-
 <div>
 <h3>Contáctanos</h3>
 <p>WhatsApp</p>
@@ -288,5 +267,6 @@ grid-template-columns:1fr;
 </body>
 </html>
 ```
+
 
 
