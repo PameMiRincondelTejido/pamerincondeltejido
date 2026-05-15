@@ -1,5 +1,5 @@
-```html
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -9,62 +9,59 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{
 font-family:'Poppins',sans-serif;
-background:#f4f0f0;
+background:#ffffff;
 color:#333;
 }
+html{scroll-behavior:smooth;}
 
 nav{
-background:#fff;
-padding:22px;
-display:flex;
-justify-content:center;
-align-items:center;
-gap:35px;
 position:sticky;
 top:0;
-z-index:1000;
-box-shadow:0 3px 10px rgba(0,0,0,.05);
+background:white;
+padding:25px;
+display:flex;
+justify-content:center;
+gap:35px;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+z-index:100;
 }
 
 nav a{
 text-decoration:none;
 color:#555;
 font-size:18px;
-transition:.3s;
 }
 
-nav a:hover{color:#f28f7b}
-
 .boton{
-background:#f28f7b;
-padding:12px 25px;
+background:#F28F7B;
+color:white;
+padding:12px 24px;
 border-radius:30px;
-color:white!important;
 font-weight:600;
 }
 
 .hero{
+padding:80px;
 display:grid;
 grid-template-columns:1fr 1fr;
-align-items:center;
 gap:80px;
-padding:80px;
+align-items:center;
 }
 
 .hero h1{
 font-family:'Playfair Display',serif;
-font-size:80px;
-color:#f28f7b;
+font-size:75px;
+color:#F28F7B;
 line-height:1;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .subtitulo{
-font-size:22px;
-margin-bottom:35px;
+font-size:28px;
+margin-bottom:30px;
 }
 
 .frase{
@@ -78,149 +75,129 @@ font-size:24px;
 line-height:1.7;
 }
 
-.placeholder{
-height:500px;
-background:#fff;
+.foto-principal{
+background:#BCEEEE;
 border-radius:35px;
+height:400px;
 display:flex;
 justify-content:center;
 align-items:center;
-flex-direction:column;
-padding:50px;
 text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-position:relative;
-overflow:hidden;
+padding:40px;
 }
 
-.placeholder:before{
-content:"🧶";
-position:absolute;
-font-size:120px;
-left:20px;
-top:20px;
-opacity:.08;
+.foto-principal h2{
+color:#F28F7B;
+font-size:45px;
+font-family:'Playfair Display';
 }
 
-.placeholder:after{
-content:"✿";
-position:absolute;
-font-size:120px;
-right:20px;
-bottom:20px;
-opacity:.08;
-}
-
-.prox{
-font-family:'Playfair Display',serif;
-font-size:60px;
-color:#f28f7b;
-margin-bottom:20px;
-}
-
-.placeholder p{
-font-size:22px;
-line-height:1.8;
-}
-
-.taller{
+.seccion{
 padding:90px;
+}
+
+.titulo{
 text-align:center;
-background:white;
+font-size:55px;
+margin-bottom:60px;
 }
 
-.taller h2{
-font-size:60px;
-margin-bottom:50px;
-}
-
-.cajas{
+.tarjetas{
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:25px;
-margin-top:50px;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
 }
 
-.caja{
-background:#f4f0f0;
-padding:35px;
+.card{
+background:white;
 border-radius:30px;
-font-size:18px;
+padding:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.card-foto{
+height:220px;
+background:#BCEEEE;
+border-radius:20px;
+margin-bottom:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#666;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.proyecto{
+background:#f8f8f8;
+padding:80px;
+border-radius:40px;
+line-height:2;
+font-size:20px;
+}
+
+.lista{
+margin-top:25px;
+}
+
+.lista li{
+margin-left:20px;
+margin-bottom:10px;
+}
+
+.preguntas{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.pregunta{
+background:white;
+padding:25px;
+border-radius:20px;
 box-shadow:0 5px 15px rgba(0,0,0,.05);
 }
 
 .banner{
-padding:100px;
-text-align:center;
-background:#f28f7b;
-color:white;
-}
-
-.banner h2{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.banner p{
-font-size:26px;
-}
-
-.calendario{
+background:#BCEEEE;
 padding:90px;
 text-align:center;
 }
 
-.calendario h2{
-font-size:50px;
-margin-bottom:50px;
-}
-
-.cal-box{
-max-width:1000px;
-margin:auto;
-background:white;
-padding:50px;
-border-radius:35px;
-box-shadow:0 10px 25px rgba(0,0,0,.05);
-line-height:2;
-font-size:22px;
+.banner h2{
+font-size:60px;
+color:#F28F7B;
+margin-bottom:20px;
 }
 
 footer{
-background:#eadfdb;
 padding:60px;
+background:#f5f5f5;
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:40px;
 }
 
-footer h3{margin-bottom:15px}
-footer p{line-height:1.8}
+footer h3{
+margin-bottom:15px;
+}
 
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:35px;
-text-decoration:none;
-color:white;
+footer p{
+line-height:1.8;
 }
 
 @media(max-width:900px){
-.hero,.cajas,footer{
+.hero,.tarjetas,.preguntas,footer{
 grid-template-columns:1fr;
-padding:40px;
 }
-.hero h1{font-size:55px}
+.hero{padding:40px}
+.hero h1{font-size:50px}
+.seccion{padding:40px}
 }
 </style>
+
 </head>
 <body>
 
@@ -229,16 +206,14 @@ padding:40px;
 <a href="#">Club</a>
 <a href="#">YouTube</a>
 <a href="#">Contacto</a>
-<a class="boton" href="#">Únete al Club</a>
+<a href="#" class="boton">Únete al Club</a>
 </nav>
 
 <section class="hero">
 <div>
 <h1>Club de Crochet</h1>
 <p class="subtitulo">by Mi Rincón del Tejido</p>
-
-<p class="frase">✨ Únete a nuestro Club de Crochet</p>
-
+<p class="frase">Únete a nuestras clases</p>
 <p class="descripcion">
 Aprende desde cero, todas las semanas un nuevo proyecto.
 <br><br>
@@ -246,60 +221,92 @@ Una comunidad para aprender y compartir.
 </p>
 </div>
 
-<div class="placeholder">
-<div class="prox">Próximamente</div>
-<p>
-Aquí irá la imagen principal del Club de Crochet.<br>
-Muy pronto encontrarás proyectos, clases y novedades.
-</p>
+<div class="foto-principal">
+<div>
+<h2>Próximamente</h2>
+<p>Aquí irá la imagen principal del Club</p>
+</div>
 </div>
 </section>
 
-<section class="taller">
-<h2>Nuestro Taller</h2>
+<section class="seccion">
+<h2 class="titulo">Cursos Online</h2>
+<div class="tarjetas">
 
-<div class="cajas">
-<div class="caja">🧶 Aprende desde cero</div>
-<div class="caja">🧶 Un nuevo proyecto cada semana</div>
-<div class="caja">🧶 Comunidad y acompañamiento</div>
-<div class="caja">🧶 Clases paso a paso</div>
+<div class="card">
+<div class="card-foto">Imagen</div>
+<h3>Proyecto mensual</h3>
+<p>Aprende paso a paso un nuevo proyecto.</p>
+</div>
+
+<div class="card">
+<div class="card-foto">Imagen</div>
+<h3>Taller online</h3>
+<p>Videos y clases explicativas.</p>
+</div>
+
+<div class="card">
+<div class="card-foto">Imagen</div>
+<h3>Biblioteca</h3>
+<p>Puntos, medidas y recursos.</p>
+</div>
+
+</div>
+</section>
+
+<section class="seccion">
+<h2 class="titulo">Proyecto mensual</h2>
+<div class="proyecto">
+Incluye:
+<ul class="lista">
+<li>1 PDF descargable</li>
+<li>Videos explicativos</li>
+<li>2 encuentros online</li>
+<li>Proyecto terminado paso a paso</li>
+</ul>
+</div>
+</section>
+
+<section class="seccion">
+<h2 class="titulo">Encuentra en el Taller</h2>
+<div class="proyecto">
+<ul class="lista">
+<li>Biblioteca de puntos</li>
+<li>Videos con puntos explicados</li>
+<li>Tallas y medidas</li>
+</ul>
+</div>
+</section>
+
+<section class="seccion">
+<h2 class="titulo">Preguntas frecuentes</h2>
+<div class="preguntas">
+<div class="pregunta">¿Necesito experiencia previa?</div>
+<div class="pregunta">¿Qué materiales necesito?</div>
+<div class="pregunta">¿Cómo ingreso al club?</div>
+<div class="pregunta">¿Las clases quedan grabadas?</div>
 </div>
 </section>
 
 <section class="banner">
-<h2>ÚNETE A NUESTRO TALLER</h2>
+<h2>ÚNETE A NUESTRO CLUB</h2>
 <p>Tejemos juntas paso a paso</p>
-</section>
-
-<section class="calendario">
-<h2>Próximos Encuentros</h2>
-<div class="cal-box">
-📅 Miércoles: Encuentro especial<br>
-📺 Directos en YouTube<br>
-🧵 Nuevo proyecto semanal<br>
-💗 Espacio para aprender y compartir
-</div>
 </section>
 
 <footer>
 <div>
 <h3>Mi Rincón del Tejido</h3>
-<p>Tejemos juntas paso a paso.</p>
+<p>Paso a paso sin prisas, a tu ritmo.</p>
 </div>
-
 <div>
 <h3>Explora</h3>
-<p>Club<br>YouTube<br>Contacto</p>
+<p>Club<br>YouTube</p>
 </div>
-
 <div>
-<h3>Contáctanos</h3>
-<p>Instagram<br>YouTube</p>
+<h3>Redes Sociales</h3>
+<p>Instagram<br>TikTok<br>Facebook</p>
 </div>
 </footer>
 
-<a href="#" class="whatsapp">✆</a>
-
 </body>
 </html>
-```
